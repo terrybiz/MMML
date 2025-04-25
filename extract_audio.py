@@ -9,8 +9,8 @@ from moviepy.video.io.VideoFileClip import VideoFileClip
 
 def extract(dataset):
     dataset = dataset.upper()
-    input_directory_path = f'data/{dataset}/Raw'
-    output_directory_path = f'data/{dataset}/wav'
+    input_directory_path = f'/content/MMML/data/MOSI/Raw'
+    output_directory_path = f'/content/MMML/data/MOSI/wav'
     if not os.path.exists(output_directory_path):
         os.makedirs(output_directory_path)
 
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     if args.dataset == 'mosei':
         print("Fixing MOSEI video files!")
         invalid_files = ['3aIQUQgawaI/12', '94ULum9MYX0/2', 'mRnEJOLkhp8/24', 'aE-X_QdDaqQ/3', '94ULum9MYX0/11', 'mRnEJOLkhp8/26']
-        directory_path = 'data/MOSEI/Raw'
+        directory_path = '/content/MMML/data/MOSEI/Raw'
         for folder in os.listdir(directory_path):
             folder_path = os.path.join(directory_path, folder)
             for file_name in os.listdir(folder_path):
