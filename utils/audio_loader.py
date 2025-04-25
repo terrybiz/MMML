@@ -102,11 +102,11 @@ def stanParameters(dataset, cv):
     # ----------------------------
     
     if dataset == 'sims':
-        csv_path = 'data/SIMS/label.csv'
-        audio_directory = "data/SIMS/wav"
+        csv_path = '/content/MMML/data/SIMS/label.csv'
+        audio_directory = "/content/MMML/data/SIMS/wav"
     elif dataset == "mosi":
-        csv_path = 'data/MOSI/label.csv'
-        audio_directory = "data/MOSI/WAV_16000/Segmented"
+        csv_path = '/content/MMML/data/MOSI/label.csv'
+        audio_directory = "/content/MMML/data/MOSI/WAV_16000/Segmented"
         
     # open csv file    
     df = pd.read_csv(csv_path)
